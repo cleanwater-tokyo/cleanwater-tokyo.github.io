@@ -174,7 +174,7 @@
     position: relative;
     height: 400px;
     width: auto;
-    background: url('images/cw-bk-2.jpg');
+    background: url('../images/cw-bk-2.jpg');
     background-size: cover;
   }
   
