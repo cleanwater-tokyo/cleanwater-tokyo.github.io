@@ -386,6 +386,18 @@
     padding: 80px 16px 0 16px;
     color: white;
   }
+
+  .cw-table-div{
+    text-align: center;
+    font-size:12px;
+    margin:0 auto;
+    
+    width:50%;
+    .cw-table{
+      width:900px;
+      
+    }
+  }
   
   
   .android-customized-section-text p {
@@ -521,6 +533,17 @@
     .android-more-button {
       display: none;
     }
+
+    .cw-table-div{
+      text-align: center;
+      font-size:12px;
+      width:80%;
+
+      .cw-table{
+        width:80%;
+      }
+    }
+
   
     .android-search-box.is-focused {
       width: calc(100% - 48px);
