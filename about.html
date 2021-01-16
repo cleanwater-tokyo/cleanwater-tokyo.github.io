@@ -17,39 +17,63 @@
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <a href="/">
-              <img class="android-logo-image" src="images/cw-name.png">
-            </a>
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/cw-name.png">
-          </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
+      <!-- ナビゲーション -->
+      <div class="navigation">
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img class="cw-name" src="images/cw-name.png">
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
+  
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"> TOP <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">団体概要</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">寄付する</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">参加する</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
-      <div class="android-content mdl-layout__content">
-        
-          
+      <div class="countainer">
+      
         <div class="cw-description-section">
-          <div class="cw-description-text">
-            <div class="mdl-typography--display-1-color-contrast">運営者情報</div>
-          </div>
+          <h3 class="cw-description-section-title">代表からのメッセージ</h3>
+          <img src="#">
+          <p class="cw-description-section-content">現在、世界には、池や川、野ざらしの井戸など飲用に適さない水源に頼るしかない環境で生活している人が依然として存在します。
+            このような環境下において、汚れた水を主原因とする病気で命を落とす乳幼児は、年間30万人、毎日800人以上にも上ることに加え、手に入る安全な水の量が少ないために身体や生活環境を清潔に保てなくなると、子どもたちは肺炎などさまざまな病気に感染しやすくなります。
+            これらの問題は人間の生死を左右する程の重大な問題ですが、安全な水へのアクセスを実現するために必要なことをミクロな視点で考えてみると、少なからずできることがあるのではないか、 僅かながらではありますが、日本に拠点を置きながらも浄水剤の配布等により、安全な水へのアクセスを広げることができるのではないか、そのような思いから2019年9月に団体を発足しました。 
+            これまで、フィリピンの貧困地域を対象に、現地の大学生と協働して浄水剤の配布を計画してきました。 
+            今後は、さらに活動を広げ、安全な水へのアクセスを世界に広げて参ります。</p>
+
+        </div>
+
+        <hr>
+
+        <div class="cw-description-section">
+          <h3 class="cw-description-section-title">理念</h3>
+          <p class="cw-description-section-content">「生まれながらの不平等をなくす」ためにCLEAN WATERは活動を続けています。
+            私はこれまでの人生、常に最善の選択と努力によって自己実現をしてきたと考えていました。しかしながら、世界には、生まれながらに不公平・不平等な状況に置かれ、自らの意思とは関係なく、生涯の大部分が決まってしまうような人々も確かに存在します。そのような人々を目のあたりにしたこと、個人の努力ではどうにもいかないこともあること、ひいては私の人生も恵まれた環境に支えられて歩んできた結果であることに気付きました。
+            この気づきをきっかけに、CLEAN WATERを設立し、現在のメンバーをはじめとする皆様のご支援のもとに活動を続けております。
+            今後も、「生まれながらの不平等をなくす」ことを目指して活動を続け、成果を出していきます。</p>
+
+        </div>
+
+        <hr>
+
+        <div class="cw-description-section">
+          <h3 class="cw-description-section-title">運営者情報</h3>
           <div class="cw-table-div">
             <table class="cw-table table table-striped">
               <!-- <caption>運営者情報</caption> -->
@@ -61,39 +85,83 @@
           </div>
         </div>
 
-
-        <footer class="android-footer mdl-mega-footer">
-
-          <div class="mdl-mega-footer--middle-section">
-
-            <a class="mdl-typography--font-light" id="version-dropdown" href="/">
-              TOP
-            </a>
+      </div>
 
 
-            <a class="mdl-typography--font-light" id="version-dropdown" href="./about.html">
-              運営者情報について
-            </a>
-            <!-- <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item"><a href="/about.html">運営者情報</a></li>
-              
-            </ul> -->
+        <!-- Footer -->
+        <footer class="bg-light text-center text-lg-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CLEAN WATER</h5>
 
-            <a class="mdl-typography--font-light" id="version-dropdown" href="https://forms.gle/Z8Mye9Pt8B7RSf8Y7" target="_blank">
-              お問い合わせフォーム
-            </a>
-             
-  
+                <p>
+                  私たちは、CLEAN WATERです。
+                </p>
+              </div>
+              <!--Grid column-->
 
-            <p>Clean Water</p>
-            <p>© 2020 <a href="https://github.com/naotsukamoto">@naotsukamoto</a> All Right Reserved.</p>
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="index.html" class="text-dark">TOP</a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="text-dark">運営者情報</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#!" class="text-dark">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Link 4</a>
+                  </li> -->
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">お問い合わせ</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="https://forms.gle/Z8Mye9Pt8B7RSf8Y7" class="text-dark">お問い合わせフォーム</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#!" class="text-dark">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Link 4</a>
+                  </li> -->
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
           </div>
+          <!-- Grid container -->
 
-
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 <a href="https://github.com/naotsukamoto">@naotsukamoto</a> All Right Reserved.
+          </div>
+          <!-- Copyright -->
         </footer>
+        <!-- Footer -->
+
       </div>
     </div>
     
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
