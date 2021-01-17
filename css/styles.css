@@ -224,7 +224,14 @@
     padding: 10px 0 40px 0;
   }
   
+  /* <503.html> */
 
+  .coming-msg{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+  }
   
   /**** Mobile layout ****/
   @media (max-width: 900px) {
