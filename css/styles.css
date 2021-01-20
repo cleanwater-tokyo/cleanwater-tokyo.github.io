@@ -25,9 +25,6 @@
     border: 0px;
   }
 
-  a {
-    color:#333333;
-  }
 
   h3.page-title{
     background-color: #ECE7E1;
@@ -104,9 +101,20 @@
     text-align: right;
   }
 
+  .navbar-link-content:nth-of-type(3){
+    margin-right: 20%;
+  }
 
   .navbar-link-content:hover{
     opacity: 0.5;
+  }
+
+  .navbar-link-content a {
+    color:#333333;
+  }
+
+  .navbar-toggler{
+    display: none;
   }
 
   .cw-name{
@@ -255,6 +263,10 @@
       display:none;
     }
 
+    .navbar-toggler{
+      display: block;
+    }
+
     .container-message{
       font-size: 10px;
       line-height: 30px;
@@ -282,3 +294,5 @@
     .cw-representative-img{
       width: 90%;
     }
+
+   
