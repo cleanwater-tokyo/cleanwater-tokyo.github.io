@@ -23,321 +23,182 @@
     <meta name="description" content="Clean WaterのWEBサイトにようこそ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Clean Water</title>
-
     <!-- Page styles -->
+    <link rel="icon" href="images/cw-logo.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
     <link rel="stylesheet" href="css/styles.css">
     </style>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <a href="/">
-              <img class="android-logo-image" src="images/cw-name.png">
-            </a>
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
-          <!-- Navigation -->
-          <!-- <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
-            </nav>
-          </div> -->
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/cw-name.png">
-          </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
+      <!-- ナビゲーション -->
+      <div class="navigation">
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img class="cw-name" src="images/cw-name.png">
+          </a>  
+            
+          <span class="navbar-link-content"><a href="about.html">団体概要</a></span>
+          <span class="navbar-link-content"><a href="503.html">寄付する</a></span>
+          <span class="navbar-link-content"><a href="503.html">参加する</a></span>
+          
+
+          <button class="navbar-toggler" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
-          </ul> -->
-        </div>
-      </div>
-
-      <!-- <div class="android-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="android-logo-image" src="images/android-logo-white.png">
-        </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
-        </nav>
-      </div> -->
-
-      <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="mdl-typography--text-center cw-bk">
-          <div class="logo-font cw-logo">
-            <img src="images/cw-logo.png">
-          </div>
-          <!-- <div class="logo-font android-slogan">Clean Water</div> -->
-          <div class="logo-font android-sub-slogan">世界中の水を綺麗にする</div>
           
-          <!-- <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
-            </button>
-          </a> -->
-        </div>
-        <!-- <div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">私たちを知る</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/wear-silver-on.png">
-                <img class="android-screen-image" src="images/wear-black-on.png">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
-            </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
-            </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
-            </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
-            </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
-            </div>
-          </div>
-        </div>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Android works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div> -->
-        <div class="cw-description-section">
-          <div class="cw-description-text">
-            <div class="mdl-typography--display-1-color-contrast">私たちを知る</div>
-            
-            <p class="mdl-typography--font-light">
-              現在、世界には、池や川、野ざらしの井戸など飲用に適さない水源に頼るしかない環境で生活している人が依然として存在します。
-              このような環境下において、汚れた水を主原因とする病気で命を落とす乳幼児は、年間30万人、毎日800人以上にも上ることに加え、手に入る安全な水の量が少ないために身体や生活環境を清潔に保てなくなると、子どもたちは肺炎などさまざまな病気に感染しやすくなります。
-              これらの問題は人間の生死を左右する程の重大な問題ですが、安全な水へのアクセスを実現するために必要なことをミクロな視点で考えてみると、少なからずできることがあるのではないか、
-              僅かながらではありますが、日本に拠点を置きながらも浄水剤の配布等により、安全な水へのアクセスを広げることができるのではないか、そのような思いから2019年9月に団体を発足しました。
-              これまで、フィリピンの貧困地域を対象に、現地の大学生と協働して浄水剤の配布を計画してきました。
-              今後は、さらに活動を広げ、安全な水へのアクセスを世界に広げて参ります。 
-            </p>
-          </div>
-          <div class="cw-description-image">
-            <img src="images/cw-about.png">
-          </div>
-        </div>
 
-
-        <div class="cw-description-section-black">
           
-          <div class="cw-description-text-black">
-            <div class="mdl-typography--display-1-color-contrast">寄付する</div>
-            <p class="mdl-typography--font-light">
-              企業・団体・個人の皆様からのご支援をお待ちしております。
-              寄付金は安全な水へのアクセスを世界中に広げるCLEAN WATERの活動及び団体運営費等に充当させていただきます。
-              ご不明点がございましたら下記フォームよりご連絡いただけますと幸いです。
-            </p>
-          </div>
-          <div class="cw-description-image">
-            <img src="images/cw-donate-white.png">
-          </div>
-        </div>
-
-
-        <div class="cw-description-section">
-          <div class="cw-description-text">
-            <div class="mdl-typography--display-1-color-contrast">参加する</div>
-            
-            <p class="mdl-typography--font-light">
-              現在、私たちは7名のメンバーで東京で活動しております。
-              メンバーは全員パートタイムで、平日は仕事に集中し、週末に集まってミーテイングをしております。
-              様々なバックグラウンドやスキルを持つ仲間と一緒に活動してみませんか？
-              我々の意義・目的に共感していただける限り、ご参加いただくモチベーションは問いません。
-              貧困の削減、機会平等の実現、組織を立ち上げる経験、ビジネススキルの習得、事業運営の経験等、現メンバーも様々なモチベーションで参加しています。
-              社会人の方も学生の方も興味を持っていただけた方は是非ご連絡をお待ちしております。
-            </p>
-          </div>
-          <div class="cw-description-image">
-            <img src="images/cw-join.png">
-          </div>
-        </div>
-
-        <!-- <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-          <div class="android-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get going on Android</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Make the switch
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   androidify.com
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Download now
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Find apps
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <footer class="android-footer mdl-mega-footer">
-
-          <div class="mdl-mega-footer--middle-section">
-
-            <a class="mdl-typography--font-light" id="version-dropdown" href="/">
-              TOP
-            </a>
-
-            <a class="mdl-typography--font-light" id="version-dropdown" href="./about.html">
-              運営者情報について
-            </a>
-            <!-- <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item"><a href="/about.html">運営者情報</a></li>
-              
-            </ul> -->
-
-            <a class="mdl-typography--font-light" id="version-dropdown" href="https://forms.gle/Z8Mye9Pt8B7RSf8Y7" target="_blank">
-              お問い合わせフォーム
-            </a>
-             
   
-
-            <p>Clean Water</p>
-            <p>© 2020 <a href="https://github.com/naotsukamoto">@naotsukamoto</a> All Right Reserved.</p>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"> TOP <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">団体概要</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="503.html">寄付する</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="503.html">参加する</a>
+              </li>
+            </ul>
           </div>
+        </nav>
 
-
-        </footer>
       </div>
-    </div>
+
+      <!-- topメイン画像 -->
+      <div class="logo-font ">
+        <img class="cw-logo" src="images/cw-top-main.png">
+      </div>         
+
+      <!-- メインコンテンツ -->
+
+      <div class="container-fluid"> 
+        <div class="container-message-box">
+          <div class="container-message-bg"></div>
+          <p class="container-message">
+            生まれながらの不平等を解消したい。</br>
+            生まれながらに安全な水へのアクセスがないために</br>
+            命を落とす人を1人でも減らしたいという思いで発起しました。</br>
+            日本に拠点を置きながらも浄水剤の配布等により、</br>
+            海外への安全な水へのアクセスを広げることができると私たちは信じて</br>
+            活動を続け、成果を出していきたい思います。</br>
+            皆様からのご参加、ご支援のほど、何卒よろしくお願いします。
+          </p>
+        </div>  
+        <div class="three-card-block">
+          <div class="three-card-block-bg"></div>
+            <div class="card">
+              <a href="about.html">
+                <p class="card-title">団体概要</p>
+                <div class="card-pic"><img src="images/information.png"></div>
+                <p>代表からのメッセージ / 理念 / 運営者情報</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="503.html">
+                <p class="card-title">参加</p>
+                <div class="card-pic "><img src="images/about.png"></div>
+                <p>参加する / 活動内容 / メンバー紹介</p>
+              </a>
+            </div>
+            
+            <div class="card">
+              <a href="503.html">
+                <p class="card-title">寄付</p>
+                <div class="card-pic"><img src="images/support.png"></div>
+                <p>寄付の用途 / 寄付の手続き</p>
+              </a>
+            </div>
+        </div>
+      </div>
+
+        
+
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CLEAN WATER</h5>
+
+                <p>
+                  特定非営利法人  CLEAN WATER
+                </p>
+                <p>
+                  Email:cleanwater.rep@gmail.com
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="index.html">TOP</a>
+                  </li>
+                  <li>
+                    <a href="about.html">運営者情報</a>
+                  </li>
+                  <li>
+                    <a href="https://forms.gle/Z8Mye9Pt8B7RSf8Y7" target="_blank">お問い合わせフォーム</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">各種アカウント</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="https://www.instagram.com/cleanwater.rep/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#!" class="text-dark">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Link 4</a>
+                  </li> -->
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+
+          <hr>
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: #B8B0A3">
+            © 2020 <a href="https://github.com/naotsukamoto">@naotsukamoto</a> All Right Reserved.
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
     
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
