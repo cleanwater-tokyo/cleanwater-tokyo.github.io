@@ -252,7 +252,7 @@
   .link-box{
     width:100%;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
   }
 
   .link-box:nth-of-type(odd){
@@ -265,18 +265,24 @@
   }
 
   .about-pic{
-    width: 65%;
+    width: 50%;
     height: 400px;
   }
 
   .about-text-tile{
-    background: linear-gradient(transparent 90%, #333333 70%);
+    background: linear-gradient(transparent 90%, #999999 70%);
+    width: 50%;
   }
 
   .about-text-box{
     text-align: left;
-    margin: 20px 0 0 100px;
-    width: 35%;
+    margin: 20px 0 0 50px;
+    width: 50%;
+  }
+
+  .about-text{
+    margin: 0 1% 0 1%;
+    font-size: 12px;
   }
 
   .border{
@@ -286,7 +292,14 @@
     color: #B8B0A3;
     margin: 0;
   }
- 
+
+  /* member.html */
+
+  .member-name{
+    font-size: 20px;
+    font-weight: bold; 
+    margin-top: 10px;
+  }
   
   /**** Mobile layout ****/
   @media (max-width: 900px) {
@@ -360,12 +373,14 @@
     }
 
     .about-text-tile{
+      margin: 0 auto;
       margin-bottom: 10px;
+      
     }
 
     .about-text{
       font-size: 11px; 
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
 
     button.btn{
