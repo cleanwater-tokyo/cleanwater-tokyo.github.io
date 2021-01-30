@@ -298,7 +298,6 @@
   .member-name{
     font-size: 20px;
     font-weight: bold; 
-    margin-top: 10px;
   }
   
   /**** Mobile layout ****/
@@ -364,23 +363,24 @@
       height: 200px;
       width: 450px;
       margin: 0 auto;
+      margin-bottom: 10px;
     }
   
     .about-text-box{
-      text-align: center;
       margin: 0 auto;
       font-size: 10px;
+      width: 90%;
     }
 
     .about-text-tile{
-      margin: 0 auto;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       
     }
 
     .about-text{
       font-size: 11px; 
       margin-bottom: 10px;
+      text-align: left;
     }
 
     button.btn{
@@ -394,5 +394,3 @@
       color: #B8B0A3;
       margin: 0;
     }
-
-    
