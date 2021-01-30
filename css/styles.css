@@ -299,6 +299,10 @@
     font-size: 20px;
     font-weight: bold; 
   }
+
+  .member-pic{
+    padding: 0 10% 0 10%;
+  }
   
   /**** Mobile layout ****/
   @media (max-width: 900px) {
@@ -360,8 +364,8 @@
     }
 
     .about-pic{
-      height: 200px;
-      width: 450px;
+      height: 400px;
+      width: 90%;
       margin: 0 auto;
       margin-bottom: 10px;
     }
@@ -393,4 +397,8 @@
       width: 100%;
       color: #B8B0A3;
       margin: 0;
+    }
+
+    .member-pic{
+      padding:0px;
     }
